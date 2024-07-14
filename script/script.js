@@ -2,11 +2,11 @@
 // Slide Object
 const slide ={
     fotosMG:{
-        img : ["/img/gallery/carro1/mg1.jpg", "/img/gallery/carro1/mg2.jpg", "/img/gallery/carro1/mg3.jpg", "/img/gallery/carro1/mg4.jpg", "/img/gallery/carro1/mg5.jpg","/img/gallery/carro1/mg6.jpg"],
+        img : ["/img/gallery/carro1/mg1.webp", "/img/gallery/carro1/mg2.webp", "/img/gallery/carro1/mg3.webp", "/img/gallery/carro1/mg4.webp", "/img/gallery/carro1/mg5.webp","/img/gallery/carro1/mg6.webp"],
         alt : ["Restauro do Carro MG", "Restauro do Carro MG", "Restauro do Carro MG", "Restauro do Carro MG", "Restauro do Carro MG", "Restauro do Carro MG","Restauro do Carro MG"]
     },
     fotosmini: {
-        img : ["/img/gallery/carro2/mini1.jpg", "/img/gallery/carro2/mini2.jpg", "/img/gallery/carro2/mini3.jpg", "/img/gallery/carro2/mini4.jpg", "/img/gallery/carro2/mini5.jpg", "/img/gallery/carro2/mini6.jpg"],
+        img : ["/img/gallery/carro2/mini1.webp", "/img/gallery/carro2/mini2.webp", "/img/gallery/carro2/mini3.webp", "/img/gallery/carro2/mini4.webp", "/img/gallery/carro2/mini5.webp", "/img/gallery/carro2/mini6.webp"],
         alt : ["Restauro do Carro Mini", "Restauro do Carro Mini", "Restauro do Carro Mini", "Restauro do Carro Mini", "Restauro do Carro Mini", "Restauro do Carro Mini",]
     }
 }
@@ -23,12 +23,12 @@ const infoContent={
     },
     // fotoModal
     fotoModalMap: {
-        carLight: '<img src="img/services/farois.jpg" style="width: 250px;" alt="Farois antes e depois da recuperação">',
-        bumper: '<img src="img/services/para-choques.jpg" style="width: 250px;" alt="Para- antes e depois da recuperação">',
-        bodyRepair: '<img src="img/services/batechapa.jpg" style="width: 250px;" alt="Trabalho de bate-chapas, antes e depois da rrecuperação">',
-        carPainting: '<img src="img/services/Pintura.jpg" style="width: 250px;" alt="Carro a ser pintado dentro da estufa de pintura">',
-        moto: '<img src="img/services/moto.jpg" style="width: 250px;" alt="Moto antes e depois da rrecuperação">',
-        documents: '<img src="img/services/oficinaFora.jpg" style="width: 250px;" alt="">',
+        carLight: '<img src="img/services/farois.webp" style="width: 250px;" alt="Farois antes e depois da recuperação">',
+        bumper: '<img src="img/services/para-choques.webp" style="width: 250px;" alt="Para- antes e depois da recuperação">',
+        bodyRepair: '<img src="img/services/batechapa.webp" style="width: 250px;" alt="Trabalho de bate-chapas, antes e depois da rrecuperação">',
+        carPainting: '<img src="img/services/Pintura.webp" style="width: 250px;" alt="Carro a ser pintado dentro da estufa de pintura">',
+        moto: '<img src="img/services/moto.webp" style="width: 250px;" alt="Moto antes e depois da rrecuperação">',
+        documents: '<img src="img/services/oficinaFora.webp" style="width: 250px;" alt="">',
     }
 }
 var getBody = document.querySelector('body'); // onde o model vai ser colocado
