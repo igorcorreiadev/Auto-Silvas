@@ -330,6 +330,15 @@ section{
             align-items: center;
             min-height: 100vh;
         }
+        #about{
+            padding: 4rem 3rem 2rem 3rem;
+            position: relative;
+            display: flex;
+            row-gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
     }
 
 }
