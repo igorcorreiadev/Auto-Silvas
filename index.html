@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oficina especializada em bate-chapas e pintura automóvel. Oferecemos orçamentos gratuitos e reparações, desde pequenos amassados até restauro completo da carroceria. Serviços de polimento e pintura de faróis, colaboramos com seguradoras em caso de sinistro. Visite-nos de segunda a sexta, das 09h às 18h, e conheça nossas instalações." />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/menu.css">
+    <link rel="stylesheet" href="/styles/cards.css">
+    <link rel="stylesheet" href="/styles/slide.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Content Security Policy (CSP) -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://cdn.jsdelivr.net https://unpkg.com https://maps.googleapis.com 'unsafe-inline' 'unsafe-eval';
+    style-src 'self' 'unsafe-inline' https://unpkg.com https://fonts.googleapis.com https://cdn.jsdelivr.net;
+    img-src 'self' data: https://maps.gstatic.com https://www.google.com https://www.google-analytics.com;
+    font-src 'self' data: https://fonts.gstatic.com https://unpkg.com;
+    connect-src 'self' https://maps.googleapis.com;
+    frame-src https://www.google.com https://maps.google.com;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+">
+    <!-- DNS Prefetch para box icons, pre carrega box icons-->
+    <link rel="preconnect" href="https://unpkg.com"crossorigin />
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- <script defer src="/script/menu.js"></script> -->
+    <script defer src="/script/teste_menu.js"></script>
+    <script defer src="/script/slide.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JASON-LD -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "Auto Silvas",
+        "keywords": [
+          "Oficina de pintura e bate-chapas"
+          "Oficina de pintura de carros e motas",
+          "Oficina de pintura",
+          "Pintura automovel",
+          "Reparação de pára-choques",
+          "Reparação de faróis de carro",
+          "Reparação de jantes",
+          "Reparação de carroçaria",
+          "Reparação de motos"
+          ],
+        "url": "https://www.autosilvas.com", 
+        "logo": "https://www.autosilvas.com/img/menu/logo/logo.webp",
+        "image": "https://www.autosilvas.com/img/Banner/banner768_992.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada regional 103 do Faial, 49 Lombo de Cima",
+          "addressLocality": "Faial",
+          "addressRegion": "Madeira",
+          "postalCode": "9230-057",
+          "addressCountry": "PT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "32.76989971646988",
+          "longitude": "-16.870565019030913"
+        },
+        "telephone": "+351964668988",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+351964668988",
+            "contactType": "Customer Service",
+            "areaServed": "PT",
+            "availableLanguage": "Portuguese"
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+351966635022",
+            "contactType": "Customer Service",
+            "areaServed": "PT",
+            "availableLanguage": "Portuguese"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=100041376116482",
+          "https://api.whatsapp.com/send/?phone=%2B351964668988"
+        ],
+        "priceRange": "35€/h",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        "paymentAccepted": "Cash, Bank Transfer, PayPal, MB-Way",
+        "currenciesAccepted": "EUR",
+        "founder": {
+          "@type": "Person",
+          "name": "João Silva, José Silva"
+        },
+        "foundingDate": "2016"
+      }
+      </script>
+
+      <title>Auto Silvas Pintura e Bate-chapas na Madeira</title>    
+</head>
+<body>
+  <header id="header">
+    <a href="#"><img src="/img/menu/logo/logo.webp" alt="logo" style="width: 10rem;"></a>
+    <nav id="nav">
+        <button aria-label="open menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="#home" class="active-menu">Home</a></li>
+          <li><a href="#services" >Serviços</a></li>
+          <li><a href="#gallery" >Galeria</a></li>
+          <li><a href="#contacts" >Contacto</a></li>
+          <li><a href="#about" >Sobre</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- HOME -->
+    <section id="home" class="size">
+      <div class="container-banner"> 
+        <picture>
+          <source media="(min-width: 601px)" srcset="/img/Banner/banner768_992.webp">
+          <img src="/img/Banner/banner350.webp" class="imgLandingPage" alt="Banner inicial">
+        </picture>
+      </div>
+    </section>
+    <!-- SERVICES -->
+    <section id="services">
+      <h2 class="title-sections">Serviços</h2>
+      <div class="container">
+        <div class="card bg-services">
+            <div class="imgBx">
+              <img src="img/icons-serviços/car-light-white.png" alt="Foto de farol de carro">
+            </div>
+            <div class="contentBx">
+              <h3><strong><em>Farois </em></strong></h3 >
+              <button><a class="btn-link" href="/servicos/restauro-de-farois-na-ilha-da-madeira.html"><span>Ler Mais ...</span></a></button>
+            </div>
+        </div>
+        <div class="card bg-services">
+          <div class="imgBx">
+            <img src="img/icons-serviços/bumper-white.png" alt="Foto de reparação de para-choques">
+          </div>
+          <div class="contentBx">
+            <h3><strong><em>Para-choques </em></strong></h3 >
+              <button><a class="btn-link" href="/servicos/reparação-de-para-choque-na-ilha-da-madeiras.html"><span>Ler Mais ...</span></a></button>
+          </div>
+        </div>
+        <div class="card bg-services">
+          <div class="imgBx">
+            <img src="img/icons-serviços/body-repair-white.png" alt="Foto reparação de chapa do carro">
+          </div>
+          <div class="contentBx">
+            <h3><strong><em>Bate-chapas</em></strong></h3 >
+              <button><a class="btn-link" href="/servicos/oficina-de-bate-chapas-na-ilha-da-madeira.html"><span>Ler Mais ...</span></a></button>
+          </div>
+        </div>
+        <div class="card bg-services">
+          <div class="imgBx">
+            <img src="img/icons-serviços/car-painting-white.png" alt="Foto de Pintura de vaiculo">
+          </div>
+          <div class="contentBx">
+            <h3><strong><em>Pintura</em></strong></h3 >
+            <button><a class="btn-link" href="/servicos/oficina-de-pintura-automovel-na-ilha-da-madeira.html"><span>Ler Mais ...</span></a></button>
+          </div>
+        </div>
+        <div class="card bg-services">
+          <div class="imgBx">
+            <img src="img/icons-serviços/moto-white.png" alt="foto de Moto">
+          </div>
+          <div class="contentBx">
+            <h3><strong><em>Motos</em></strong></h3 >
+            <button><a class="btn-link" href="/servicos/reparação-de-pintura-de-motas-na-ilha-da-madeira.html"><span>Ler Mais ...</span></a></button>
+          </div>
+        </div>
+        <div class="card bg-services">
+          <div class="imgBx">
+            <img src="img/icons-serviços/documentos-white.png" alt="Foto de documentos">
+          </div>
+          <div class="contentBx">
+            <h3><strong><em>Seguradoras!</em></strong></h3 >
+              <button><a class="btn-link" href="/servicos/informacao-e-dados-sobre-a-auto-silvas.html"><span>Ler Mais ...</span></a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Galeria -->
+    <section id="gallery">
+      <h2 class="title-sections">Galeria</h2>
+        <div class="container">
+          <div class="card bg-gallery-carro1">
+              <div class="contentBx content-gallery">
+                <button id="carro1" class="modal-gallery" aria-label="Mostrar galeria de fotos do carro MG"><span>Ver Galeria</span></button>
+              </div>
+          </div>
+          <div class="card bg-gallery-carro2">
+            <div class="contentBx content-gallery">
+              <button id="carro2" class="modal-gallery" aria-label="Mostrar galeria de fotos do carro Mini Cooper"><span>Ver Galeria</span></button>
+            </div>
+          </div>
+          <div class="card bg-gallery-carro3">
+            <div class="contentBx content-gallery">
+              <button id="carro3" class="modal-gallery" aria-label="Mostrar galeria de fotos do carro BMW"><span>Ver Galeria</span></button>
+            </div>
+          </div>
+          <div class="card bg-gallery-carro4">
+            <div class="contentBx content-gallery">
+              <button id="carro4" class="modal-gallery" aria-label="Mostrar galeria de fotos do carro 4"><span>Ver Galeria</span></button>
+            </div>
+          </div>
+          <div class="card bg-gallery-carro5">
+            <div class="contentBx content-gallery">
+              <button id="carro5" class="modal-gallery" aria-label="Mostrar galeria de fotos do carro 5"><span>Ver Galeria</span></button>
+            </div>
+          </div>
+          <div class="card bg-gallery-carro6">
+            <div class="contentBx content-gallery">
+              <button id="carro6" class="modal-gallery" aria-label="Mostrar galeria de fotos do carro 6"><span>Ver Galeria</span></button>
+            </div>
+          </div>
+        </div>
+      <div id="slide-gallery" style="display: none;"></div>
+    </section>
+
+    <!-- Contacts -->
+
+    <section id="contacts">
+      <h2 class="title-sections">Contacto</h2>
+      <div id="body-contacts">
+
+        <!-- Mapa -->
+        <div id="map">
+          <iframe class="map-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.843017265316!2d-16.870565019030913!3d32.76989971646988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6067e992d8acc9%3A0x3a0d089fbb7d1122!2sAuto%20Silvas!5e0!3m2!1sen!2spt!4v1694954211633!5m2!1sen!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- InfoContact -->
+        <div id="contacts-list">
+          <div class="info-contacts">
+            <h3> <strong>Contactos</strong></h3>
+            <div class="contacts-links">
+              <div class="info-links">
+                <i class='bx bx-map-alt'></i><div><a href="https://maps.app.goo.gl/kHsAYpWyJdmqNZJd8"> <strong>Lombo de Cima <br> 9230-057 Faial</strong></a></div>
+              </div>
+              <div class="info-links">
+                <i class='bx bx-envelope'></i><a href="mailto:joaovfs@hotmail.com"><strong>joaovfs@hotmail.com</strong></a><br>
+              </div>
+              <div class="info-links">
+                <i class='bx bx-phone-call'></i><a href="tel:+351 964 668 988"><strong>+351 964 668 988</strong></a><br>
+              </div>
+              <div class="info-links">
+                <i class='bx bx-phone-call'></i><a href="tel:+351966635022"><strong>+351 966 635 022</strong></a><br>
+              </div>
+            </div>
+          </div>
+          <div class="social-media">
+            <h3><strong>Redes Sociais</strong></h3>
+            <div class="social-links">
+              <div class="info-links">
+                <i class='bx bxl-facebook-square'></i><a href="https://www.facebook.com/profile.php?id=100041376116482" target="_blank"><strong>Facebook</strong></a><br>
+              </div>
+              <div class="info-links">
+                <i class='bx bxl-whatsapp'></i><a href="https://api.whatsapp.com/send/?phone=%2B351964668988"><strong>Whatsapp</strong></a>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about"> 
+      <h2 class="title-sections">Sobre</h2>
+      <div class="container-about">
+        <div class="about-img">
+            <img src="/img/foto-escritorio/escritorio.webp" alt="Foto do escritório">
+        </div>
+        <div class="about-info">
+          <div class="about-txt">
+            <h4><strong>Quem Somos:</strong></h4>
+            <p>
+                Somos apaixonados por automóveis e motos, e dedicados a restaurar e revitalizar os veículos de nossos clientes. Nossa equipe altamente qualificada e experiente é movida pelo desejo de entregar serviços de qualidade excepcional.
+            </p>
+          </div>
+          <div class="about-txt">
+          <h4><strong>O Que Oferecemos:</strong></h4>
+            <p> 
+              Oferecemos um atendimento personalizado, ouvindo suas necessidades e garantindo que cada detalhe seja tratado com cuidado.
+              Confie-nos o seu carro e experimente a diferença que um trabalho de qualidade pode fazer. Seja bem-vindo à nossa oficina, onde cuidamos dos veículos como se fossem nossos próprios.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

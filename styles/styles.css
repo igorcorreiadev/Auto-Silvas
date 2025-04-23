@@ -1,0 +1,402 @@
+:root{
+    /* colors */
+   
+
+    /* cards background image */
+    --services-bg-img:url("../img/icons-serviços/red-metal-textured-background.webp");
+    --gallery-bg-img-carro1:url("../img/gallery/carro1/mg1.webp");
+    --gallery-bg-img-carro2:url("../img/gallery/carro2/mini1.webp");
+    --gallery-bg-img-carro3:url("../img/gallery/carro3/bmw1.webp");
+    --gallery-bg-img-carro4:url("#");
+    --gallery-bg-img-carro5:url("#");
+    --gallery-bg-img-carro6:url("#");
+
+   
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    background-color: black;
+}
+main{
+    position: relative;
+}
+section{
+    padding: 4rem 4rem 0 4rem;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+}
+.title-sections{
+    position: relative;
+    font-size: 2rem;
+    color: white;
+
+}
+.title-sections::after{
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Ajuste conforme necessário para posicionar a linha */
+    left: 10%; /* Ajuste para centralizar */
+    width: 80%; /* Largura da linha, ajustável */
+    height: 4px; /* Espessura da linha */
+    background-color: red; /* Cor da linha */
+}
+/* HOME */
+#home {
+    justify-content: center;
+    align-items: center;
+}
+
+.container-banner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-banner picture{
+    height: calc(100vh - 4rem);
+    padding: 4rem 0 ;
+}
+.imgLandingPage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 
+                6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+/* SERVICES*/
+#services{
+    display: flex;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.bg-services{
+    background-image: var(--services-bg-img);
+}
+/*Gallery*/
+#gallery{
+    display: flex;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#gallery .container .card{
+    height: 150px;
+}
+.bg-gallery-carro1{
+    background-image: var(--gallery-bg-img-carro1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.bg-gallery-carro2{
+    background-image: var(--gallery-bg-img-carro2);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+}
+.bg-gallery-carro3{
+    background-image: var(--gallery-bg-img-carro3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.bg-gallery-carro4{
+    background-image: var(--gallery-bg-img-carro4);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+}
+.bg-gallery-carro5{
+    background-image: var(--gallery-bg-img-carro5);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+}
+.bg-gallery-carro6{
+    background-image: var(--gallery-bg-img-carro6);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+}
+.content-gallery{
+    margin-top: 60px !important;
+}
+
+/*Contacts*/
+#contacts{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    position: relative;
+    display: flex;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#body-contacts{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 
+    6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+#map{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    border: 2px solid white;
+}
+.map-container{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* para que o mapa se ajuste ao container*/
+}
+#contacts-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 4rem;
+    width: 35%;
+    height: 100%;
+    padding: 2rem 0 2rem 2rem;
+    border: 2px solid white;
+}
+.info-contacts, .social-media{
+    position: relative;
+    height: 50%;
+}
+.info-links{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-bottom: 1rem;
+}
+#contacts-list h3{
+    padding-bottom: 1rem;
+    color: white;
+    font-size: 1.7rem;
+}
+#contacts-list a{
+    font-size: 1.2rem;
+    color: white;
+}
+#contacts-list a:hover{
+    background-color: transparent;
+}
+#contacts-list .bx{
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+.bx-map-alt{
+    color: red;
+}
+.bx-envelope{
+    color: #1079D1;
+}
+.bx-phone-call{
+    color: rgb(16, 233, 16);
+}
+.bxl-facebook-square{
+    color: #0866FF;
+}
+.bxl-whatsapp{
+    color: #00E676;
+}
+/*ABOUT*/
+#about{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    position: relative;
+    display: flex;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.container-about{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    border: 2px solid white;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 
+                6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+.about-img{
+    padding: 1rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+}
+.about-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 4rem;
+    width: 50%;
+    height: 100%;
+    padding:1rem;
+}
+.about-txt{ 
+    position: relative;
+    height: 50%;
+}
+.about-txt h4{
+    font-size: 1.4rem;
+    color:white
+}
+.about-txt p{
+    font-size: 1.1rem;
+    color:white
+}
+@media screen and (min-width: 1200px){
+    body, header, section{
+        width: 1200px; 
+    }
+    #gallery .container{
+        padding-top: 3rem;
+    }
+
+}
+@media screen and (max-width:1000px) {
+
+    #body-contacts{
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    #contacts-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        row-gap: 4rem;
+        width: 100%;
+ 
+    }
+    #map{
+        position: relative;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        border: 2px solid white;
+    }
+    #contacts{
+        padding-bottom: 2rem;
+    }
+    .container-about{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-img{
+        padding: 1rem;
+        width: 100%;
+        height: 50%;
+    }
+    .about-txt{ 
+        position: relative;
+        height: 50%;
+    }
+    .about-info{
+        width: 100%;
+        height: 100%;
+        padding:1rem;
+    }
+    .about-txt h4{
+        padding-bottom: 1rem;
+    }
+}
+@media screen and (max-width:720px) {
+    #contacts-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 4rem;
+        width: 100%;
+        padding: 2rem 0;
+    }
+    .info-contacts, .social-media{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-around;
+        width: 100%;
+        position: relative;
+        height: 50%;
+        padding: 0;
+    }
+    #imageDialog {
+        width: 100% !important;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+        padding: 0;
+        box-shadow: none;
+    }
+    /* cards */
+    .container .card:hover{
+        box-shadow: none;
+    }
+    .container .card .contentBx button:hover{
+        box-shadow: none;
+    }
+    .container .card button:hover span{
+
+        transform: none;
+    }
+    .container .card:hover .imgBx, .container .card .contentBx{
+        transform: none;
+    }
+    
+
+    @media screen and (max-width:450px) {
+        #contacts{
+            padding: 4rem 3rem 2rem 3rem;
+            position: relative;
+            display: flex;
+            row-gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #about{
+            padding: 4rem 3rem 2rem 3rem;
+            position: relative;
+            display: flex;
+            row-gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    }
+
+}

@@ -1,0 +1,88 @@
+body{
+    flex-direction: row;
+}
+.servicos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+.container-servicos{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80%;
+    width: 80%;
+    padding: 2rem;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+.servicos .title-sections{
+    display: block;
+    text-align: center;
+}
+
+.container-description{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Faz com que .container-description ocupe o espaço restante */
+    position: relative;
+    height: 100%;
+    color: white;
+}
+.container-description h2{
+    margin: 2rem 0 1rem 0;
+}
+.body-description{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.description{
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+.description h3{
+    margin: 1rem 0;
+}
+.description p{
+    padding-left: 1rem;
+}
+.imagem-servicos{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+
+@media screen and (min-width:350px){
+}
+@media screen and (max-width:768px){
+    .servicos{
+        margin: 2rem 0;
+    }
+    .container-servicos{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        transform: none;
+        min-height: 80%;
+        width: 80%;
+        padding: 2rem;
+        box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+@media screen and (min-width:1200px){
+
+}
+@media screen and (min-width:1500px){
+
+}
