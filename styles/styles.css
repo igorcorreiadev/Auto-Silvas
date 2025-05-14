@@ -376,8 +376,6 @@ section{
     .container .card:hover .imgBx, .container .card .contentBx{
         transform: none;
     }
-    
-
     @media screen and (max-width:450px) {
         #contacts{
             padding: 4rem 3rem 2rem 3rem;

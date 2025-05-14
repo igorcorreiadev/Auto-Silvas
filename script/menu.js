@@ -4,9 +4,9 @@ const sections = document.querySelectorAll('section');
 const navLinkMenu = document.querySelectorAll('header nav a');
 
 function toggleMenu(event){
-    if(event.type === 'touchstart') event.preventDefault();// serve para quando o event é touch não executa o event click outra vez
+    if(event.type === 'touchstart') event.preventDefault();
     nav.classList.toggle('active');
-    const active = nav.classList.contains('active');// vai receber um valor boleano que vai ser incerido no atributo aria-expanded 
+    const active = nav.classList.contains('active');
     event.currentTarget.setAttribute('aria-expanded', active);
     if(active){ 
         event.currentTarget.setAttribute('aria-label', 'close menu');
@@ -15,38 +15,46 @@ function toggleMenu(event){
     }
 }
 
-//Fechar o menu quando clicar em um item do menu
-
+// Modificado: Adicionar scroll suave e prevenir mudança de URL
 navLinkMenu.forEach(link => {
-    link.addEventListener('click', () => {
-        setTimeout(() => {
-            // Fechar o menu
-            nav.classList.remove('active');
-            btnMobile.setAttribute('aria-expanded', 'false');
-            btnMobile.setAttribute('aria-label', 'open menu');
-        }, 500); // Adiciona um atraso de 300ms
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); // Previne o comportamento padrão do link
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+            targetSection.scrollIntoView();
+            
+            // Atualizar a classe ativa
+            navLinkMenu.forEach(l => l.classList.remove('active-menu'));
+            link.classList.add('active-menu');
+            
+            // Fechar o menu mobile (se aberto)
+            setTimeout(() => {
+                nav.classList.remove('active');
+                btnMobile.setAttribute('aria-expanded', 'false');
+                btnMobile.setAttribute('aria-label', 'open menu');
+            }, 500);
+        }
     });
 });
 
 btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu); // para o touchscreen do movel
+btnMobile.addEventListener('touchstart', toggleMenu);
 
-/* modar o item no menu */
+/* modificar o item ativo no menu durante o scroll */
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
-         let id = sec.getAttribute('id');
+        let id = sec.getAttribute('id');
         
-
         if (top >= offset && top < offset + height) {
             navLinkMenu.forEach(link => {
                 link.classList.remove('active-menu');
-            })
-            // Select the active menu link using the id
+            });
             document.querySelector('header nav a[href="#' + id + '"]').classList.add('active-menu');
-         }
+        }
     });
 };
-

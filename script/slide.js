@@ -124,7 +124,6 @@ document.addEventListener('DOMContentLoaded', function() {
             dialog.close();
             getBody.removeAttribute('style')
             getBody.removeChild(dialog);
-
         });
         
         // Fechar o dialog ao clicar no backdrop
